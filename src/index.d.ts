@@ -125,7 +125,7 @@ declare module 'react-trello' {
   //     tagStyle: object
   //   }
 
-  class Board extends React.Component<BoardProps, {}> {
+  export default class Board extends React.Component<BoardProps, {}> {
     store: Store
     id: string
   }
