@@ -3,43 +3,43 @@ declare module 'react-trello' {
   import {Store} from 'redux'
   import PropTypes from 'prop-types'
   interface BoardProps {
-    draggable: boolean
-    className: string
-    landeDraggable: boolean
-    cardDraggable: boolean
-    collapsibleLanes: boolean
-    editable: boolean
-    canAddLanes: boolean
-    addLaneTitle: string
-    handleDragStart(cardId: string, laneId: string): void
-    handleDragEnd(
+    data: object
+    draggable?: boolean
+    className?: string
+    landeDraggable?: boolean
+    cardDraggable?: boolean
+    collapsibleLanes?: boolean
+    editable?: boolean
+    canAddLanes?: boolean
+    addLaneTitle?: string
+    handleDragStart?: (cardId: string, laneId: string) => void
+    handleDragEnd?: (
       cardId: string,
       sourceLaneId: string,
       targetLaneId: string,
       position: number,
       cardDetails: object
-    ): void
-    handleLaneDragStart(laneId: string): void
-    handleLaneDragEnd(laneId: string, newPosition: number, payload: object): void
-    cardDragClass: string
-    laneDragClass: string
-    onLaneScroll(requestedPage: number, laneId: string): void
-    onCardClick(cardId: string, metadata: object, laneId: string): void
-    onCardAdd(card: ICard, laneId: string): void
-    onLaneAdd(params: object): void
-    addCardLink: PropTypes.ReactNodeLike
-    newCardTemplate: PropTypes.ReactNodeLike
-    hideCardDeleteIcon: boolean
-    onCardDelete(cardId: string, laneId: string): void
-    onLaneClick(laneId: string): void
-    laneSortFunction(card1: ICard, card2: ICard): void
-    eventBusHandle(handle: object): void
-    onDataChange(newData: object): void
-    style: object
-    customCardLayout: boolean
-    customLaneHeader: PropTypes.ReactElementLike
-    data: object
-    tagStyle: object
+    ) => void
+    handleLaneDragStart?: (laneId: string) => void
+    handleLaneDragEnd?: (laneId: string, newPosition: number, payload: object) => void
+    cardDragClass?: string
+    laneDragClass?: string
+    onLaneScroll?: (requestedPage: number, laneId: string) => void
+    onCardClick?: (cardId: string, metadata: object, laneId: string) => void
+    onCardAdd?: (card: ICard, laneId: string) => void
+    onLaneAdd?: (params: object) => void
+    addCardLink?: PropTypes.ReactNodeLike
+    newCardTemplate?: PropTypes.ReactNodeLike
+    hideCardDeleteIcon?: boolean
+    onCardDelete?: (cardId: string, laneId: string) => void
+    onLaneClick?: (laneId: string) => void
+    laneSortFunction?: (card1: ICard, card2: ICard) => void
+    eventBusHandle?: (handle: object) => void
+    onDataChange?: (newData: object) => void
+    style?: object
+    customCardLayout?: boolean
+    customLaneHeader?: PropTypes.ReactElementLike
+    tagStyle?: object
   }
 
   interface ICard {
