@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -83,7 +83,7 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 32px;
     width: 32px;
   }
-`
+`;
 
 export const BoardDiv = styled.div`
   background-color: #3179ba;
@@ -94,14 +94,14 @@ export const BoardDiv = styled.div`
   flex-direction: row;
   align-items: flex-start;
   height: 100vh;
-`
+`;
 
 export const Header = styled.header`
   margin-bottom: 10px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-`
+`;
 
 export const Section = styled.section`
   background-color: #e3e3e3;
@@ -113,12 +113,12 @@ export const Section = styled.section`
   height: auto;
   max-height: 90%;
   flex-direction: column;
-`
+`;
 
 export const LaneHeader = styled(Header)`
   padding: 0px 5px;
   margin-bottom: 0px;
-`
+`;
 
 export const LaneFooter = styled.div`
   display: flex;
@@ -127,7 +127,7 @@ export const LaneFooter = styled.div`
   width: 100%;
   position: relative;
   height: 10px;
-`
+`;
 
 export const ScrollableLane = styled.div`
   flex: 1;
@@ -140,7 +140,7 @@ export const ScrollableLane = styled.div`
   margin-top: 10px;
   flex-direction: column;
   justify-content: space-between;
-`
+`;
 
 export const Title = styled.span`
   font-weight: bold;
@@ -148,14 +148,14 @@ export const Title = styled.span`
   line-height: 18px;
   cursor: grab;
   width: 70%;
-`
+`;
 
 export const RightContent = styled.span`
   width: 30%;
   text-align: right;
   padding-right: 10px;
   font-size: 13px;
-`
+`;
 export const CardWrapper = styled.article`
   border-radius: 3px;
   border-bottom: 1px solid #ccc;
@@ -166,34 +166,34 @@ export const CardWrapper = styled.article`
   max-width: 250px;
   margin-bottom: 7px;
   min-width: 230px;
-`
+`;
 
 export const MovableCardWrapper = styled(CardWrapper)`
   &:hover {
     background-color: #f0f0f0;
     color: #000;
   }
-`
+`;
 
 export const CardHeader = styled(Header)`
   border-bottom: 1px solid #eee;
   padding-bottom: 6px;
   color: #000;
-`
+`;
 
 export const CardTitle = styled(Title)`
   font-size: 14px;
-`
+`;
 
 export const CardRightContent = styled(RightContent)`
   font-size: 10px;
-`
+`;
 
 export const Detail = styled.div`
   font-size: 12px;
   color: #4d4d4d;
   white-space: normal;
-`
+`;
 
 export const Footer = styled.div`
   border-top: 1px solid #eee;
@@ -203,14 +203,14 @@ export const Footer = styled.div`
   justify-content: flex-end;
   flex-direction: row;
   flex-wrap: wrap;
-`
+`;
 
 export const TagSpan = styled.span`
   padding: 2px 3px;
   border-radius: 3px;
   margin: 2px 5px;
   font-size: 70%;
-`
+`;
 
 export const AddCardLink = styled.a`
   border-radius: 0 0 3px 3px;
@@ -227,13 +227,13 @@ export const AddCardLink = styled.a`
     color: #4d4d4d;
     text-decoration: underline;
   }
-`
+`;
 
 export const LaneTitle = styled.div`
   font-size: 15px;
   width: 268px;
   height: auto;
-`
+`;
 
 export const LaneSection = styled.section`
   background-color: #2b6aa3;
@@ -244,12 +244,12 @@ export const LaneSection = styled.section`
   display: inline-flex;
   height: auto;
   flex-direction: column;
-`
+`;
 
 export const NewLaneSection = styled(LaneSection)`
   background-color: #e0e3e6;
-`
+`;
 
 export const NewLaneButtons = styled.div`
   margin-top: 10px;
-`
+`;
